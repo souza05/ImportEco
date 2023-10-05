@@ -1,6 +1,6 @@
 package com.itb.tcc.ImportEco.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,12 +21,8 @@ public class Usuario {
 	private String email;
 	private String senha;
 	private String nome;
-	private String idade;
-	private LocalDateTime dataNascimento;
-	private String logradouro; // rua, avenida, viela
-	private String cep;
-	private String bairro;
-	private String cidade;
+	private LocalDate  dataNascimento;
+	private String telefone;
 	
 	private boolean codStatusUsuario;
 
@@ -70,52 +66,12 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getIdade() {
-		return idade;
-	}
-
-	public void setIdade(String idade) {
-		this.idade = idade;
-	}
-
-	public LocalDateTime getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataNascimento(LocalDateTime dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
-	}
-
-	public String getLogradouro() {
-		return logradouro;
-	}
-
-	public void setLogradouro(String logradouro) {
-		this.logradouro = logradouro;
-	}
-
-	public String getCep() {
-		return cep;
-	}
-
-	public void setCep(String cep) {
-		this.cep = cep;
-	}
-
-	public String getBairro() {
-		return bairro;
-	}
-
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
-	}
-
-	public String getCidade() {
-		return cidade;
-	}
-
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
 	}
 
 	public boolean isCodStatusUsuario() {
@@ -125,6 +81,16 @@ public class Usuario {
 	public void setCodStatusUsuario(boolean codStatusUsuario) {
 		this.codStatusUsuario = codStatusUsuario;
 	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	
+	
 
 	
 }
