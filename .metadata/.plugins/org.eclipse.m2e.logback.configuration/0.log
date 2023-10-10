@@ -34,3 +34,4 @@ Caused by: java.lang.Exception: File not found: Z:\LIP1\paulo_h\ImportEco\Import
 	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
 	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
 	... 27 common frames omitted
+2023-10-10 07:21:52,593 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
